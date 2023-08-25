@@ -224,6 +224,12 @@ body {
     text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
 }
 
+.sertifikasi-card2 > a{
+    padding: 1rem 6rem;
+}
+
+
+
 .sertifikasi-card > a:hover,
 .sertifikasi-card2 > a:hover,
 .sertifikasi-card3 > a:hover{
@@ -336,16 +342,44 @@ body {
   
   .navigation>a:hover::after{
       transform: scaleX(0.2);
+    } 
+
+    /* hero */
+
+    .content {
+        text-align: center;
     }
 
-    .sertifikasi-card{
-        flex-wrap: wrap;
+    .content > h1 {
+        font-size: 2.6rem;
     }
-    .sertifikasi-card2{
-        flex-wrap: wrap;
+
+    .content > p {
+        font-size: 1.5rem;
     }
-    .sertifikasi-card3{
+
+    /* Sertification */ 
+
+    .sertifikasi > h2 {
+        font-size: 4rem;
+    }
+
+    .sertifikasi > p {
+        font-size: 1.5rem;
+    }
+
+    .sertifikasi-card,
+    .sertifikasi-card2,
+    .sertifikasi-card3 {
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sertifikasi-card > a,
+    .sertifikasi-card2 > a,
+    .sertifikasi-card3 > a {
+        width: 100%;
+        font-size: 1.6rem;
     }
 
 }
