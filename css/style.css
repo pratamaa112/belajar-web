@@ -25,7 +25,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.4rem 7%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     border-bottom: 1px solid var(--primary);
     position: fixed;
     top: 0;
@@ -233,7 +233,8 @@ body {
 .sertifikasi-card > a:hover,
 .sertifikasi-card2 > a:hover,
 .sertifikasi-card3 > a:hover{
-    color: var(--bg);
+    color: #ababab;
+    background: linear-gradient(180deg, rgba(255,0,0,1)1%, rgba(0,0,0,1) 100%);
 }
 
 
@@ -289,21 +290,34 @@ body {
         transform: scaleX(0.3);
     }
 
-    .sertifikasi-card{
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    .sertifikasi-card2{
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    .sertifikasi-card3{
-        flex-wrap: wrap;
-        text-align: center;
+
+    /* sertification */
+
+    .sertifikasi > h2 {
+        font-size: 4rem;
     }
 
-    
+    .sertifikasi > p {
+        font-size: 1.3rem;
+    }
 
+    .sertifikasi-card,
+    .sertifikasi-card2,
+    .sertifikasi-card3 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sertifikasi-card > a,
+    .sertifikasi-card2 > a,
+    .sertifikasi-card3 > a {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .sertifikasi-card2 > a {
+        padding: 1rem 10rem;
+    }
 }
 
 /* mobile phone */
@@ -365,7 +379,7 @@ body {
     }
 
     .sertifikasi > p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .sertifikasi-card,
