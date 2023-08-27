@@ -138,7 +138,8 @@ body {
 }
   
 .content > a,
-.ISO9001-contact > a {
+.ISO9001-contact > a,
+.ISO14001-contact > a {
     color: #fff;
     display: inline-block;
     margin-top: 1rem;
@@ -151,7 +152,8 @@ body {
 }
   
 .content>a:hover,
-.ISO9001-contact > a:hover {
+.ISO9001-contact > a:hover,
+.ISO14001-contact > a:hover {
     background: linear-gradient(180deg, rgba(255,0,0,1)1%, rgba(0,0,0,1) 100%);
 }
 
@@ -160,7 +162,8 @@ body {
 
 
 .sertifikasi,
-.ISO9001 {
+.ISO9001,
+.ISO14001 {
     min-height: 100vh;
     background-image: url('../image/header.jpg.jpg');
     background-repeat: no-repeat;
@@ -243,43 +246,51 @@ body {
 }
 
 
-/* ISO9001 */
+/* ISO */
 
-.ISO9001-img {
+.ISO9001-img,
+.ISO14001-img {
     display: flex;
     padding: 1rem 1rem;
     justify-content: center;
 }
 
-.ISO9001-img-1 {
+.ISO9001-img-1,
+.ISO14001-img-1 {
     border-radius: 50%;
     width: 15rem;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
 }
 
 
-.ISO9001-row {
+.ISO9001-row,
+.ISO14001-row {
     text-align: justify;
     font-weight: 400;
     background-color:  rgba(1, 1, 1,0.5);
     padding: 1rem 1rem;
     border-radius: 0.5rem;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-.ISO9001-row > h2{
+.ISO9001-row > h2,
+.ISO14001-row > h2{
     text-align: center;
     color: var(--primary);
     font-weight: 700;
+    font-size: 2rem;
 }
 
-.ISO9001-row > p {
+.ISO9001-row > p,
+.ISO14001-row > p {
     margin: 1rem;
 }
 
-.ISO9001-contact {
+.ISO9001-contact,
+.ISO14001-contact {
     display: flex;
     justify-content: center;
 }
-
 
 
 
