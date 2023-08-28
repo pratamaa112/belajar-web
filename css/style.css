@@ -149,7 +149,7 @@ body {
     border-radius: 0.7rem;
     font-weight: 400;
     font-size: 1.4rem;
-    z-index: 1; /* Menempatkan tombol di atas lapisan lain */
+    z-index: 1; /* Menempatkan tombol di atas lapisan lain  -- bisa didelete */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
   
