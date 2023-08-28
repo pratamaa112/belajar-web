@@ -139,7 +139,8 @@ body {
   
 .content > a,
 .ISO9001-contact > a,
-.ISO14001-contact > a {
+.ISO14001-contact > a,
+.ISO45001-contact > a {
     color: #fff;
     display: inline-block;
     margin-top: 1rem;
@@ -148,14 +149,18 @@ body {
     border-radius: 0.7rem;
     font-weight: 400;
     font-size: 1.4rem;
-    text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+    z-index: 1; /* Menempatkan tombol di atas lapisan lain */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
   
 .content>a:hover,
 .ISO9001-contact > a:hover,
-.ISO14001-contact > a:hover {
+.ISO14001-contact > a:hover,
+.ISO45001-contact > a:hover {
     background: linear-gradient(180deg, rgba(255,0,0,1)1%, rgba(0,0,0,1) 100%);
-}
+    transform: scale(1.05) translateZ(10px); /* Perbesar dan geser ke depan saat dihover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Efek bayangan saat dihover */
+} 
 
 
 /* sertifikasi */
@@ -163,7 +168,8 @@ body {
 
 .sertifikasi,
 .ISO9001,
-.ISO14001 {
+.ISO14001,
+.ISO45001 {
     min-height: 100vh;
     background-image: url('../image/header.jpg.jpg');
     background-repeat: no-repeat;
@@ -173,8 +179,7 @@ body {
     padding: 7rem 7% 1.4rem;
 }
 
-.sertifikasi::after
-.ISO9001 {
+.sertifikasi::after{
     content: '';
     display: block;
     position: absolute;
@@ -249,14 +254,16 @@ body {
 /* ISO */
 
 .ISO9001-img,
-.ISO14001-img {
+.ISO14001-img,
+.ISO45001-img {
     display: flex;
     padding: 1rem 1rem;
     justify-content: center;
 }
 
 .ISO9001-img-1,
-.ISO14001-img-1 {
+.ISO14001-img-1,
+.ISO45001-img-1 {
     border-radius: 50%;
     width: 15rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
@@ -264,7 +271,8 @@ body {
 
 
 .ISO9001-row,
-.ISO14001-row {
+.ISO14001-row,
+.ISO45001-row {
     text-align: justify;
     font-weight: 400;
     background-color:  rgba(1, 1, 1,0.5);
@@ -274,7 +282,8 @@ body {
 }
 
 .ISO9001-row > h2,
-.ISO14001-row > h2{
+.ISO14001-row > h2,
+.ISO45001-row > h2 {
     text-align: center;
     color: var(--primary);
     font-weight: 700;
@@ -282,12 +291,14 @@ body {
 }
 
 .ISO9001-row > p,
-.ISO14001-row > p {
+.ISO14001-row > p,
+.ISO45001-row > p {
     margin: 1rem;
 }
 
 .ISO9001-contact,
-.ISO14001-contact {
+.ISO14001-contact,
+.ISO45001-contact {
     display: flex;
     justify-content: center;
 }
