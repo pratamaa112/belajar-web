@@ -141,7 +141,10 @@ body {
 .ISO9001-contact > a,
 .ISO14001-contact > a,
 .ISO45001-contact > a,
-.ISO37001-contact > a {
+.ISO37001-contact > a,
+.SKPK3-contact > a,
+.RULK-contact > a,
+.K3-contact > a {
     color: #fff;
     display: inline-block;
     margin-top: 1rem;
@@ -158,7 +161,10 @@ body {
 .ISO9001-contact > a:hover,
 .ISO14001-contact > a:hover,
 .ISO45001-contact > a:hover,
-.ISO37001-contact > a:hover {
+.ISO37001-contact > a:hover,
+.SKPK3-contact > a:hover,
+.RULK-contact > a:hover,
+.K3-contact > a:hover {
     background: linear-gradient(180deg, rgba(255,0,0,1)1%, rgba(0,0,0,1) 100%);
     transform: scale(1.05) translateZ(10px); /* Perbesar dan geser ke depan saat dihover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Efek bayangan saat dihover */
@@ -172,7 +178,10 @@ body {
 .ISO9001,
 .ISO14001,
 .ISO45001,
-.ISO37001 {
+.ISO37001,
+.SKPK3,
+.RULK,
+.K3 {
     min-height: 100vh;
     background-image: url('../image/header.jpg.jpg');
     background-repeat: no-repeat;
@@ -259,7 +268,10 @@ body {
 .ISO9001-img,
 .ISO14001-img,
 .ISO45001-img,
-.ISO37001-img {
+.ISO37001-img,
+.SKPK3-img,
+.RULK-img,
+.K3-img {
     display: flex;
     padding: 1rem 1rem;
     justify-content: center;
@@ -268,17 +280,29 @@ body {
 .ISO9001-img-1,
 .ISO14001-img-1,
 .ISO45001-img-1,
-.ISO37001-img-1 {
+.ISO37001-img-1,
+.SKPK3-img-1,
+.K3-img-1 {
     border-radius: 50%;
     width: 15rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+}
+
+.RULK-img-1 {
+    border-radius: 1.5rem;
+    width: 30rem;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
 }
 
 
 .ISO9001-row,
 .ISO14001-row,
 .ISO45001-row,
-.ISO37001-row {
+.ISO37001-row,
+.SKPK3-row,
+.RULK-row,
+.K3-row {
     text-align: justify;
     font-weight: 400;
     background-color:  rgba(1, 1, 1,0.5);
@@ -290,7 +314,10 @@ body {
 .ISO9001-row > h2,
 .ISO14001-row > h2,
 .ISO45001-row > h2,
-.ISO37001-row > h2 {
+.ISO37001-row > h2,
+.SKPK3-row > h2,
+.RULK-row >h2,
+.K3-row > h2 {
     text-align: center;
     color: var(--primary);
     font-weight: 700;
@@ -300,14 +327,20 @@ body {
 .ISO9001-row > p,
 .ISO14001-row > p,
 .ISO45001-row > p,
-.ISO37001-row > p {
+.ISO37001-row > p,
+.SKPK3-row > p,
+.RULK-row > p,
+.K3-row > p {
     margin: 1rem;
 }
 
 .ISO9001-contact,
 .ISO14001-contact,
 .ISO45001-contact,
-.ISO37001-contact {
+.ISO37001-contact,
+.SKPK3-contact,
+.RULK-contact,
+.K3-contact {
     display: flex;
     justify-content: center;
 }
