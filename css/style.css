@@ -144,7 +144,8 @@ body {
 .ISO37001-contact > a,
 .SKPK3-contact > a,
 .RULK-contact > a,
-.K3-contact > a {
+.K3-contact > a,
+.SMK3-contact > a {
     color: #fff;
     display: inline-block;
     margin-top: 1rem;
@@ -164,7 +165,8 @@ body {
 .ISO37001-contact > a:hover,
 .SKPK3-contact > a:hover,
 .RULK-contact > a:hover,
-.K3-contact > a:hover {
+.K3-contact > a:hover,
+.SMK3-contact > a:hover {
     background: linear-gradient(180deg, rgba(255,0,0,1)1%, rgba(0,0,0,1) 100%);
     transform: scale(1.05) translateZ(10px); /* Perbesar dan geser ke depan saat dihover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Efek bayangan saat dihover */
@@ -181,7 +183,8 @@ body {
 .ISO37001,
 .SKPK3,
 .RULK,
-.K3 {
+.K3,
+.SMK3 S{
     min-height: 100vh;
     background-image: url('../image/header.jpg.jpg');
     background-repeat: no-repeat;
@@ -199,7 +202,7 @@ body {
     bottom: 0;
 }
 
-.sertifikasi > h2{
+.sertifikasi > h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
@@ -207,7 +210,7 @@ body {
     text-shadow: 1px 1px 3px rgba(1,1,3,1);
 }
 
-.sertifikasi > p{
+.sertifikasi > p {
     text-align: center;
     max-width: 90rem;
     margin: auto;
@@ -271,7 +274,8 @@ body {
 .ISO37001-img,
 .SKPK3-img,
 .RULK-img,
-.K3-img {
+.K3-img,
+.SMK3-img {
     display: flex;
     padding: 1rem 1rem;
     justify-content: center;
@@ -288,8 +292,9 @@ body {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
 }
 
-.RULK-img-1 {
-    border-radius: 1.5rem;
+.RULK-img-1, 
+.SMK3-img-1 {
+    border-radius: 2rem;
     width: 30rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
     margin-bottom: 1rem;
@@ -302,7 +307,8 @@ body {
 .ISO37001-row,
 .SKPK3-row,
 .RULK-row,
-.K3-row {
+.K3-row,
+.SMK3-row {
     text-align: justify;
     font-weight: 400;
     background-color:  rgba(1, 1, 1,0.5);
@@ -317,7 +323,8 @@ body {
 .ISO37001-row > h2,
 .SKPK3-row > h2,
 .RULK-row >h2,
-.K3-row > h2 {
+.K3-row > h2,
+.SMK3-row > h2 {
     text-align: center;
     color: var(--primary);
     font-weight: 700;
@@ -330,7 +337,8 @@ body {
 .ISO37001-row > p,
 .SKPK3-row > p,
 .RULK-row > p,
-.K3-row > p {
+.K3-row > p,
+.SMK3-row > p {
     margin: 1rem;
 }
 
@@ -340,10 +348,124 @@ body {
 .ISO37001-contact,
 .SKPK3-contact,
 .RULK-contact,
-.K3-contact {
+.K3-contact,
+.SMK3-contact {
     display: flex;
     justify-content: center;
 }
+
+.a1,
+.a2,
+.a3,
+.a4,
+.a5,
+.a6,
+.a7,
+.a8 {
+    font-weight: 700;
+}
+
+/* footer */
+
+.contact {
+    min-height: 100vh;
+    background-image: url('../image/header.jpg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contact-title {
+    padding: 7rem 7% 1.4rem;
+}
+
+.contact-title > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    text-shadow: 1px 1px 3px rgba(1,1,3,1);
+}
+
+.contact-title > p {
+    text-align: center;
+    max-width: 90rem;
+    margin: auto;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(1,1,3,1);
+}
+
+.contact-row {
+    display: flex;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.map {
+    width: 100%; 
+    flex: 1 1 45rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.contact-extra { 
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.contact-extra > h2 {
+    color: var(--primary);
+    text-align: center;
+    align-items: center;
+}
+
+.contact-extra > a {
+    display: flex;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem;
+
+}
+
+.contact-extra > a > span {
+    margin-left: 0.5rem ;
+}
+
+.contact-extra > a > span:hover {
+    color: var(--primary);
+}
+
+
+footer {
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: var(--primary);
+    margin-top: 1rem;
+}
+
+.socials > a {
+    color: #010101;
+    margin: 0.5rem
+}
+
+.links > a {
+    color: black;
+    margin: 1rem;
+}
+
+
+
 
 
 
@@ -499,5 +621,31 @@ body {
         font-size: 1.6rem;
     }
 
-}
+    .contact-row {
+        flex-wrap:wrap;
+    }
 
+    .contact-title > p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .map {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+
+    .contact-extra > h2 {
+        font-size: 2rem;
+    }
+
+    .contact-extra > a {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        margin-top: 11rem;
+    }
+}
