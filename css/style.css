@@ -543,6 +543,36 @@ footer {
     .sertifikasi-card2 > a {
         padding: 1rem 10rem;
     }
+
+    /* footer */
+
+    .contact-row {
+        flex-wrap:wrap;
+    }
+
+    .contact-title > p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .map {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+
+    .contact-extra > h2 {
+        font-size: 2rem;
+    }
+
+    .contact-extra > a {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        margin-top: 11rem;
+    }
 }
 
 /* mobile phone */
