@@ -558,8 +558,7 @@ footer {
     .map {
         object-fit: cover;
         object-position: center;
-        width: 100%;
-        padding-bottom: 5rem;
+        margin-bottom: 5rem;
     }
 
     .contact-extra > h2 {
@@ -663,8 +662,7 @@ footer {
     .map {
         object-fit: cover;
         object-position: center;
-        width: 100%;
-        padding-bottom: 5rem;
+        margin-bottom: 5rem;
     }
 
     .contact-extra > h2 {
