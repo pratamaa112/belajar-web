@@ -1,5 +1,5 @@
 :root {
-    --primary: rgb(160, 124, 40);
+    --primary: #a07c28;
     --bg: #010101;
 }
 
@@ -469,7 +469,6 @@ footer {
 
 
 
-
 /* Media queries */
 
 /* Laptop */
@@ -575,7 +574,7 @@ footer {
 }
 
 /* mobile phone */
-@media (max-width: 450px){
+@media (min-width: 100px) and (max-width: 450px){
     html{font-size: 55%;}
   
     #hamburger-menu{
@@ -674,6 +673,6 @@ footer {
     }
 
     footer {
-        margin-top: 11rem;
+        margin-top: 17.1rem;
     }
 }
